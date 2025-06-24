@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/js/pages/auth.js" defer></script>
+    <title>Log in</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="./img/shop-logo.png" alt="">
+    </div>
+    <section class="log_in">
+    <div class="container">
+        <form action="">
+        <div class="email">
+            <label for="e1">Email or Username</label>
+            <input id="e1" name="email"  type="email" required>
+            <i id="icon" class="fa-sharp fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="password">
+            <label for="p1">Password</label>
+            <div class="pass">
+                <input id="p1" required name="password" type="password">
+                <button type="button" class="see"> <i class="fa-solid fa-eye"></i></button>
+                <i id="icon" class="fa-solid fa-circle-check"></i>
+
+            </div>
+        </div>
+        <div class="log">
+            <input style="width: 100%;" value="Log in" type="submit" id="submit" class="login_bt">
+        </div>
+        </form>
+        <hr>
+        <a href=""  id="switch" class="new_account">Create new account</a>
+        <a class="pass_lost" href="/lost_password.html"> password lost ?</a>
+        <!-- <a href=""> Go back to Store</a> !-->
+    </div>
+</section>
+<section class="sign_in">
+    <div class="container">
+        <form action="">
+        <div class="email">
+            <label for="e">Enter new email</label>
+            <input id="e" name="email"  type="email" required>
+            <i id="icon" class="fa-sharp fa-solid fa-circle-exclamation "></i>
+        </div>
+        <div class="password">
+            <label for="p">Enter new Password</label>
+            <div class="pass">
+                <input id="p" required name="password" type="password">
+                <button type="button" class="see"><i class="fa-solid fa-eye"></i></button>
+                <i id="icon" class="fa-solid fa-circle-check "></i>
+            </div>
+        </div>
+        <div class="log">
+            <button class="signin_bt" id="submit" type="submit">Sign In</button>
+        </div>
+        </form>
+        <hr>
+        <a class="login" id="switch"  href="">have an account ?</a>
+        <!-- <a href=""> Go back to Store</a> !-->
+    </div>
+</section>
+
+</body>
+</html>

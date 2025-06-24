@@ -1,0 +1,567 @@
+body{
+    background-color: hsl(170, 50%, 98%);
+}
+/* reusable*/
+ul{
+    list-style: none;
+}
+button{
+    background: none;
+}
+button:active {
+    background-color: #E8EBED;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0693e3;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 26px;
+}
+h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 17px;
+}
+h4{
+    font-weight: 500;
+    font-size: 15px;
+}
+img{
+    width: 100%
+}
+
+p{
+    color:#48515b;
+    font-weight: 400;
+} 
+/*others */
+.nav{
+    background-color: white;
+}
+.nav .first-header{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(210, 29%, 90%);
+}
+
+.nav  .logo{
+    height: fit-content;
+    width: 80px;/* change*/
+    padding: 5px;
+}
+.nav  .logo img{
+    height: 100%;
+}
+header .cart, header .menu-button{
+    width: 62px;
+    color: black;
+    font-size: 25px;
+    padding: 10px 20px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+header .second-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .log {
+    height: fit-content;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+header .log  a{
+    color: hsl(0, 0%, 60%);
+    padding:10px 15px;
+    font-size: 0.85em;
+    border-left: 1px solid hsl(210, 29%, 90%);
+
+}
+header .log .login{
+    color: #48a7de;
+}
+
+
+.nav .first-header .search {
+    display: block;
+    width: 150px;
+    margin: 5px 10px;
+    position: relative;
+}
+.nav .first-header .search .text {
+    width: 100%;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 40px;
+    border-radius: 20px;
+        border-width: 1px;
+}
+.nav .first-header .search i{
+position: absolute;
+color: grey;
+top: 6px;
+font-size: 16px;
+right: 10px;
+}
+
+header .links{
+display: none;
+background-color: white;
+width: 100%;
+position: absolute;
+top: 62px;
+}
+
+header .links.show{
+    display: block;
+}
+
+header .second-header li{
+padding: 5px 20px;
+position: relative;
+}
+header .second-header .links>li{
+    cursor: pointer;
+
+    border: 1px solid hsl(210, 29%, 90%);
+}
+
+header .second-header .sub-menu{
+    display: none;
+    padding: 0 10px;
+}
+header .second-header .sub-menu li{
+    padding-left: 30px;
+}
+
+  
+header .second-header .sub-menu li i {
+    margin-right: 10px;
+    color: #48a7de;
+}
+
+header .second-header .sub-menu.show{
+    display: block;
+}
+header .second-header ul .link_menu{
+    position: relative;
+    padding-right: 30px;
+}
+header .second-header .arrow_icon{
+display: inline-block;
+position: absolute;
+right: 5%;
+cursor: pointer;
+}
+
+
+main .container{
+    display: flex;
+    /*padding:20px ;*/
+}
+
+.Checkout h1{
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+.Checkout form h2{
+padding-bottom:5px ;
+border-bottom:1px solid var(--light-border); 
+margin-bottom:10px ;
+}
+.Checkout .show{
+font-size: 17px;
+color:rgb(77, 77, 77);
+font-weight: 500;
+}
+.Checkout .show >h3{
+    padding: 20px;
+    border-top:1px solid #a0a3a8 ;
+border-bottom:1px solid #a0a3a8 ;
+}
+.Checkout .show >h3 span{
+    margin-right: 20px;
+}
+.show .click { 
+    transform: rotate(180deg);
+}
+
+.Checkout .show i{
+  color:#48a7de;
+  transition: 0.2s ease;
+}
+
+.Checkout input{
+    padding: 10px ;
+    border-radius: 5px;
+    border: 1px solid var(--light-border);
+}
+.Checkout form {
+    padding: 10px 20px;
+    background-color: white;
+}
+.Checkout a{
+    font-size: 14px;
+}
+.Checkout form >*{
+    margin-top:15px ;
+}
+.Checkout form .name input:first-child{
+/* selecting first child need to be after selcing all child*/
+margin-bottom: 10px;
+}
+form h2:first-child{
+margin-top: 0;
+}
+
+.Checkout textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.Checkout .coupon{
+    display: none;
+    justify-content: space-between;
+}
+.Checkout .coupon input{
+    padding: 10px;
+    width: 70%;
+    border-radius: 0;
+}
+.Checkout .apply{
+    width: 28%;
+}
+.Checkout form .details>input{
+    width: 100%;
+    margin-top:10px  ;
+}
+form .email input{
+    width: 100%;
+}
+
+.Checkout form .details>div{
+    margin-top: 10px;/* since i put margin jsu t for input */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.Checkout .location input:not(:first-child){
+    margin-top: 10px;
+}
+.buy,.apply{
+    cursor: pointer;
+    padding: 10px ;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+}
+.buy:hover{
+    background-color: #0693e3;
+}
+.buy:active{
+    background-color: #0c7aba;
+}
+.buy i{
+    color: white;
+}
+
+
+.order{
+    display: none;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.order .product{ 
+    margin-top: 20px;
+/*maybe change to grid  later for parent */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order .product:first-child{
+margin: 0;
+}
+.order .product .number{
+    padding: 0 10px;
+}
+.order .product .text{
+    width: 35%;
+}
+
+.order .img-c{
+        height: fit-content;
+        margin-right: 10px;
+        width: 80px;
+}
+.order h2{
+    margin-bottom: 10px;
+}
+.order .details{
+    border:1px solid  #a0a3a8;
+    border-radius: 5px;
+}
+.order .details .products{
+    padding: 10px;
+}
+
+.order .details >*:not(.products){
+    padding: 10px;
+}
+.order .details >*:not(:first-child):not(.products){
+    border-top:1px solid #48515b ;
+}
+.headers>*,.total >*{
+    width: fit-content;
+}
+.total h3{
+    font-size: 20px;
+}
+.order .details .headers,.total,.subtotal{
+    display: flex;
+    justify-content: space-between;
+
+}
+.headers{
+    border-bottom:1px solid #48515b ;
+}
+main .Checkout .show .order{
+    display: none;
+    margin: 0;
+    padding: 20px;
+        
+}
+
+
+
+footer .main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+footer .main .links {
+    margin:15px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .main .links >* {
+padding: 5px;
+}
+footer .main .img-c{
+    width: 100px;
+}
+footer .disclaimer{
+    background-color: #27323f;
+    padding: 40px;
+}
+footer .disclaimer p{
+    color: #bdc2c4;
+}
+
+
+
+
+@media (min-width:700px) {
+    .show{
+        display: none;
+        color:#48a7de;
+    }
+    .nav{
+    border-bottom: 1px solid var(--light-border);
+    }
+    .container{
+        background-color: white;
+        margin: 0;
+        padding: 20px;
+    }
+    main .container>*{
+        width: 50%;
+    }
+    .order{
+        display: block;
+    }
+    .order .details .products{
+        padding: 20px;
+    }
+
+    .cover{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        opacity: 0.5;
+        background-color: black;
+    }
+    .nav >li:hover{
+        background-color: #48515b;
+    }
+    .nav .first-header{
+        padding: 0 20px;
+    }
+    .nav .first-header .logo,footer .main .img-c{
+        height: 60px;
+        width: 100px;
+        padding: 5px;
+        min-width: 80px;
+    }
+    .nav .first-header .logo img,footer .main img{
+        height: 100%;
+    }
+    header .second-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .second-header .links > li:hover {
+        background-color: #eae6e6;
+      }
+
+
+      header .first-header{
+        border-bottom: 1px solid hsl(210, 29%, 90%);
+    }
+    header .second-header{
+        padding-left: 10px;
+        display: flex;
+        justify-content: flex-start;    }
+     header .menu-button {
+        display: none;
+    }
+    header .links{
+        display: flex;
+    }
+    .nav  .logo{
+        height: 60px;
+        width: 100px;
+        padding: 5px;
+    }
+    .nav  .logo img{
+        height: 100%;
+    }
+    header .second-header .links{
+        margin-left: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        position: static;
+        width: fit-content;
+        display: flex;
+    }
+   
+    header .second-header li{
+        padding: 15px 15px;
+        font-weight: 600;
+       color: #48a7de;
+
+    }
+    header .second-header .links >li{
+    border: 0;
+    }
+
+   /* header .second-header .links{
+        position: relative;
+    } delete this later */
+    header .second-header .sub-menu{
+        position: absolute;
+        z-index: 9;
+        top: 49px;
+        background-color: white;
+        padding: 0;
+    }
+    header .second-header .sub-menu li{
+        padding-left: 25px;
+    }
+    header .second-header .links > li:hover {
+        background-color: #eae6e6;
+      }
+
+.links .link_menu:hover ~  .sub-menu{
+        display: block;
+       }
+/* cause it doesn't stay when i move from link_menu to sub_menu*/
+
+header .second-header .sub-menu:hover{
+    display: block;
+}
+header .second-header .sub-menu li:hover{
+    background-color: rgb(234, 230, 230);
+
+}
+
+    /*.link_menu:hover ~ .sub-menu{
+     display: block;
+    }   works only with ~ , and doesn't stay 
+    */
+    
+    header .second-header .sub-menu.show{
+        display:none ;
+    }
+    
+    
+     .first-header .menu-button{
+        display: none;
+    }
+    .nav .first-header .search {
+        display: block;
+        width: 150px;
+        margin: 5px 10px;
+    }
+    .nav .first-header .search .text {
+        width: 100%;
+        font-size: 16px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 40px;
+        border-radius: 20px;
+            border-width: 1px;
+}
+       
+    .Checkout{
+        padding-right: 10px;
+        }
+   
+
+    .Checkout form .details>div{
+    flex-direction: row;
+    }
+    .Checkout .location input{
+        width: 30%;
+    }
+    .Checkout form .name input:first-child{
+        margin-bottom: 0;
+        }
+    .Checkout .name input{
+            max-width: 48%;
+    }
+    .order{
+        padding: 20px;
+        background-color: white;
+    }
+    footer .main{
+        flex-direction:row ;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+}

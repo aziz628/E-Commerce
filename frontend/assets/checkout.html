@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+    <script src="/js/pages/checkout.js" defer></script>
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <section class="nav" >
+            <div class="first-header">
+                <div class="search"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="text" type="text" placeholder="Search ...">
+                </div>
+
+            </div>
+            <div class="second-header" >
+                <button  class="menu-button"><i class="fas fa-bars"></i></button>
+    
+                <div class="logo"><a href="/"><img src="/img/shop-logo.png" alt=""></a></div>
+    
+                <ul class="links">
+                    <li class="link_menu"><a href="/shop.html">All products </a> 
+                        <div  class="arrow_icon"><i class="fa-solid fa-angle-down"></i></div> 
+                    </li>
+                    <ul class="sub-menu">
+                        <li><i class="fa-solid fa-angle-right"></i><a href="">Kitchen appliances</a></li>
+                        <li><i class="fa-solid fa-angle-right"></i><a href="">PCs & laptop</a></li>
+                        <li><i class="fa-solid fa-angle-right"></i><a href="">Smart home</a></li>
+                    </ul>
+                    <li class="sss"><a href="">Home appliances </a></li>
+                    <li><a href="">Audio & video </a></li>
+                    <li><a href="">New arrivals </a></li>
+                    <li><a href="">Today's deal </a></li>
+    
+                </ul>
+                
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <section class="Checkout">
+                <h1>Checkout</h1>
+                <div class="show">
+                    <h3><span>Show order </span>
+                        <i class="fa-solid fa-angle-down"></i> </h3>
+                    <section class="order">
+                        <h2>Your order</h2>
+                        <div class="details">
+                    
+                            <div class="headers"> 
+                                    <h4>product</h4>
+                                    <h4>Subtotal</h4> 
+                            </div>
+                            <div class="products">
+                            </div>
+                            <div class="subtotal">
+                                    <h4>Discount</h4> <p class="price">$0.00</p>
+                            </div>
+        
+                            <div class="total">
+                                <h3>Total</h3>
+                                <p class="value">$0.00</p>
+                            </div>
+                        </div>
+                    </section>
+                 </div>
+
+                <form action="">
+                    
+                    <h2>Customer informations</h2>
+                    <div class="email">
+                    <input type="email" placeholder="Email">
+                    </div>
+                    
+                    <h2>Billing details</h2>
+                    <div class="details">
+                    <div class="name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                    </div>
+                    <input type="text" placeholder="company name">
+                    <input type="text" placeholder="country/region">
+                    <input type="text" placeholder="street adress">
+                    <input type="text" placeholder="apprtement">
+                    <div class="location">
+                    <input class="first" type="text" placeholder="town/city">
+                    <input type="text" placeholder="state">
+                    <input type="text" placeholder="zip code">
+                    </div>
+                    <input type="text" placeholder="Phone">
+                    </div>
+                    <h2>Additional information</h2>
+                    <textarea rows="4"  placeholder="Notesabout your order, e.g. special notes for delivery."></textarea>
+                    <a href="">Have a coupon ?  </a>
+                    <div class="coupon" >
+                    <input type="text" placeholder="Coupon code">
+                    <button class="apply">Apply</button>
+                    </div>
+                    <h2>payment</h2>
+                    <button class="buy"><i class="fa-sharp fa-solid fa-lock"></i>    Place order <span class="total_price"></span></button>
+
+
+                </form>
+
+            </section>
+            <section id="order" class="order">
+                <h2>Your order</h2>
+                <div class="details">
+                    
+                    <div class="headers"> 
+                            <h4>product</h4>
+                            <h4>Subtotal</h4> 
+                    </div>
+                    <div class="products">
+                    </div>
+                    <div class="subtotal">
+                            <h4>Discount</h4> <p class="price">$0.00</p>
+                    </div>
+
+                    <div class="total">
+                        <h3>Total</h3>
+                        <p class="value">$0.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="main">
+            <div class="img-c">
+            </div>
+            <div class="links">
+                <h2>Shop</h2>
+                <a href=""> Hot deals</a>
+                <a href="">Categories</a>
+                <a href="">Brands</a>
+                <a href="">Rebates</a>
+                <a href="">Weekly deals</a>
+            </div>
+            <div class="links">
+                <h2>Need help ?</h2>
+                <a href="">Contact</a>
+                <a href="">Order tracking</a>
+                <a href="">FAQs</a>
+                <a href="">Return policy</a>
+                <a href="">Privacy policy</a>
+            </div>
+            <div class="links">
+                <h2>Cantact</h2>
+                <a href="">123 Fifth Avenue, New York, NY 10160</a>
+                <a href="">contact@info.com</a>
+                <a href="">929-242-6868</a>
+                
+            </div>
+            
+        </section>
+    <section class="disclaimer">
+        <p>
+            © 2024 Electronic Store. Powered by Electronic Store
+        </p>
+        <div class="try"></div>
+    </section>
+</footer>
+</body>
+</html>

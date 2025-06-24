@@ -1,0 +1,567 @@
+
+body{
+    background-color: hsl(170, 50%, 98%);
+    position: relative;
+}
+/* reusable */ 
+
+ul{
+    list-style: none;
+}
+button{
+    background: none;
+}
+button:active {
+    background-color: #E8EBED;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0693e3;
+}
+
+h1,h3,h3,h4,h5{
+    font-weight: 600;
+}
+img{
+    width: 100%
+}
+
+p{
+    color:#48515b;
+    font-weight: 400;
+}
+
+
+/*others*/
+.nav{
+    background-color: white;
+}
+
+main .home{
+    padding:20px;
+    background-image: url(/img/home-background.jpg);
+    background-position: center center;
+    background-size:cover;
+}
+main .home .container{
+    background-color: white;
+    padding: 20px;
+    margin:50% 0% 0%;
+}
+main .home .container .logo{
+width: 70px;
+}
+main .home .container >*{
+    margin: 20px 0;
+}
+main .home .container a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.about,.Products-summary,.audio-video
+,.today-deal,.home-appliances,.kitchen-appliances,.pcs-laptop{
+    margin: 30px 20px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+
+}
+main .about{
+    padding: 10px 15px;
+}
+main .about .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .about .container .logo{
+    color: #0693e3;
+    font-size: 30px;
+}
+main .about .container >div{
+    flex: 50%;
+    padding:10px;
+}
+main .about .container div h3{
+    margin: 10px 0;
+}
+main .about .container div p{
+    opacity: 0.7;
+}
+.Products-summary{
+padding: 10px 0;
+}
+.Products-summary .container{
+    margin: 0px auto;
+    max-width: 780px; /* change for desktop*/
+    display: grid;
+    grid-column-gap:10px ;
+    grid-row-gap: 30px;
+    grid-template-columns:repeat(2,minmax(100px,1fr)) ;
+}
+.Products-summary .container .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    text-align: center
+}
+
+.Products-summary .container .product h3{
+    text-transform:uppercase;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 15px;
+    height: fit-content;
+    width: 100%;
+}
+
+
+.Products-summary .container .product h3.bright{
+    background-color: white;
+}
+
+.Products-summary .container .img-c{
+    width:auto;
+    position: relative;
+}
+
+.Products-summary .container .product p{
+    font-size: 10px;
+    color: gray;
+    font-weight: 700;
+}
+.today-deal,.audio-video,.home-appliances
+,.kitchen-appliances,.pcs-laptop{
+    background-color: white;
+    padding: 20px;
+}
+.headers{
+    margin-bottom: 20px;
+}
+.headers a ,.other-products a{
+    font-size: 18px;
+    font-weight: 600;
+}
+main .container_p {
+    margin: 0px auto;
+    display: grid;
+    grid-column-gap:10px ;
+    grid-row-gap: 20px;
+    grid-template-columns:repeat(2,minmax(100px,1fr)) ;
+}
+/* fix the large photo width for 1 column grid*/
+
+
+.product .img-c:hover .hover-img{
+    opacity: 1;
+    transition:0.8s;
+
+}
+.hover-img{
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.other-products{
+    margin: 15px;
+    padding: 20px;
+}
+.other-products >div{
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+}
+.other-products .first{
+    background-color:#F1F2F6 ;
+}
+.other-products  .second{
+    background-color: #E8EBED;
+}
+.other-products .third{
+    background-color: #F8EDD1;
+}
+.other-products .details{
+    margin-right: 30%;
+    position: relative;
+    z-index: 3;
+}
+
+.other-products .details a{
+    text-wrap: nowrap;
+}
+.other-products div h1{
+    width: fit-content;
+}
+.other-products div p{
+    margin:10px 0;
+}
+.other-products .img-c{
+    height:150px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+
+}
+.other-products img{
+    max-height: 100%;
+}
+.home-appliances{
+    padding: 20px;
+    background-color: white;
+}
+
+
+.brand-deal{
+    margin: 20px;
+}
+.brand-deal .container{
+    display:flex;
+    flex-direction: column;
+}
+
+.brand-deal .content{
+    margin-bottom:0 ;
+    background-color: white;
+    padding: 30px;
+    display:block ;
+}
+.brand-deal .content >*{
+    margin: 20px 0;
+}
+
+
+.brand-deal h4{
+    color: #9ca7ab;
+    font-weight: 600;
+}
+
+.top-brand{
+    margin: 30px 20px;
+    padding: 20px 0;
+}
+.top-brand h1 {
+    margin-bottom: 10px;
+}
+.top-brand .container{
+    display: flex;
+    flex-wrap: wrap;
+background-color: white;
+}
+.top-brand .logo{
+    box-shadow: 0 0 1px rgb(213, 213, 213);
+    width: 50%;
+    padding: 20px 10px;
+}
+.top-brand .logo img{
+    display: block;
+    margin: 0 auto;
+    width: 116px;
+    height: 40px;
+}
+
+.comments{
+    margin: 30px;
+}
+.comments h3{
+    margin: 10px 0;
+}
+
+.comments .container .review{
+    padding: 20px;
+    margin-top:20px ;
+    background-color: white;
+
+}
+.comments .container .review >*{
+margin-top: 20px;
+}
+.comments .container .review .f_stars{
+color: var(--star_color);
+margin: 0;
+display: flex;
+}
+.comments .client{
+    display: flex;
+    align-items: center;
+}
+.comments .review p{
+    font-weight: 400;
+    color: #48515b;
+}
+.comments .img-c{
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.comments .img-c img{
+    border-radius: 50%;
+}
+.cantact{
+    padding: 20px;
+}
+.cantact a{
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #48515b;
+}
+
+.cantact .container div{
+    padding:20px 0;
+    border-top: #bdc2c4 solid 1px;
+}
+.cantact  .container .img-c{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+.cantact  .container img{
+height: 200px;
+width: 300px;
+}
+.subscribe{
+    padding: 30px 20px;
+    background-color: white;
+}
+.subscribe .container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.subscribe div >*{
+    margin:10px 0;
+}
+.subscribe .input{
+padding-top:30px ;
+}
+.subscribe  .email{
+    font-size: 20px;
+    background:none ;
+    border: 1px dotted #9ca7ab;
+    width: 90%;
+    padding: 10px;
+}
+.subscribe .img-c i{
+    font-size: 40px;
+}
+.subscribe  .bt{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color:black;
+    color: white;
+    border: none;
+}
+footer .main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+footer .main .links {
+    margin:15px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .main .links >* {
+padding: 5px;
+}
+footer .main .img-c{
+    width: 100px;
+}
+footer .disclaimer{
+    background-color: #27323f;
+    padding: 40px;
+}
+footer .disclaimer p{
+    color: #bdc2c4;
+}
+@media (min-width:500px) {
+main .container_p,.Products-summary .container{
+        grid-template-columns:repeat(auto-fit,minmax(150px,1fr)) ;
+    }
+
+
+}
+@media (min-width:700px) {
+    
+    main .home .container >* {
+        margin:15px 0 ;
+        line-height: 1;
+    }
+    
+    footer .main .img-c{
+        height: 60px;
+        width: 100px;
+        padding: 5px;
+    }
+    footer .main img{
+        height: 100%;
+    }
+    
+    
+    
+    main .home{
+        height: 400px;
+        display: flex;
+        padding: 5px;
+        justify-content: flex-end;
+    }
+    main .home .container{
+        height: fit-content;
+        width: 42%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    main .home .container h1{
+       font-size: 35px;
+    }
+    /* main .about .container >div{
+    border-right: 1px solid rgba(128, 128, 128,0.5);
+    } */
+    .Products-summary .container .product h3{
+        bottom: 50px;
+    }
+    main .container_p , .Products-summary .container  {
+        gap: 30px;
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
+
+    }
+ 
+    .headers{
+    display: flex;
+    align-items: center;
+    }
+    .headers a ,.other-products a{
+    margin-left:20px ;
+    }
+    .other-products{
+        display: flex;
+        justify-content: space-between;
+    }
+    .other-products >div{
+        /* no idea why this worked and other not 
+        maybe because of position relative */ 
+        width: 32%;
+    }
+    .other-products .img-c{
+        z-index: 1;
+    }
+    .brand-deal .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .brand-deal .img-c, .brand-deal .content{
+        flex-basis: 50%;
+    }
+    .top-brand .container{
+        flex-wrap:nowrap;
+    }
+    .top-brand .logo{
+        width: 25%;
+    }
+    .top-brand h1{
+        font-size: 25px;
+    }
+    .comments .container{
+        display: grid;
+        gap:20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr 1fr ;
+    }
+    .comments .container .review {
+        margin-top:0 ;
+    }
+    .comments h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .cantact .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cantact  .container .first{
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    } 
+    .cantact .container div{
+        width: 50%;
+    }
+   
+    .subscribe .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .subscribe .img-c{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-right:10px ;
+        border-right: 1px solid #9ca7ab;
+    }
+    .subscribe .img-c h3{
+        margin-left: 20px;
+    }
+    .subscribe .container p{
+        padding: 0 10px;
+    }
+    
+    .subscribe .input>*{
+        display: inline-block;
+    }
+    .subscribe .input .bt{
+        width: 160px;
+        margin-left: 10px;
+    }
+    .subscribe .input .email{
+        width:calc(100% - 180px);
+    }
+    body footer .main{
+        flex-direction:row ;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+@media (min-width:900px){
+    .other-products >div{
+        padding: 30px;
+    }
+    .other-products .img-c{
+        bottom: -20px;
+        height: 200px;
+        
+    }
+    .other-products .details {
+        margin-right: 10%;
+    }
+    .other-products div h1 {
+        font-size: 40px;
+    }
+    .subscribe{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe .container{
+        padding: 0  10px 0 0 ;
+    }
+    .subscribe >*{
+        flex-grow: 1;
+ /* or width:49% or using calc()...*/
+    }
+}

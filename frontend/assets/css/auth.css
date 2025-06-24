@@ -1,0 +1,145 @@
+/*gloal */
+:root{
+    --light-border-color:#9ca7ab;
+}
+
+body{
+    color: #48515b;
+    width: 100%;
+    height:100%;
+    background-color: hsl(180, 19%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*reusbale*/
+img{
+    width: 100%;
+}
+a{
+    cursor: pointer;
+    color: #48515b;
+    text-decoration: none;
+}
+/* other*/ 
+.logo{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    border: 1px solid var(--light-border-color);
+    flex-direction: column;
+    background-color: white;
+    width: 280px;
+    padding: 20px 28px;
+}
+.container form{
+    margin: 0;
+}
+.container form >div{
+    display: flex;
+    flex-direction: column;
+}
+.container >*,.container form>*{
+    margin: 10px 0;
+}
+.container .email input,.password input{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 1.2px solid #48515b;
+}
+
+.container .password input{
+padding-right: 30px;
+}
+.password .pass{
+    position: relative;
+}
+
+.container .password .pass,.email{
+    width:100%;
+    position: relative;
+}
+
+.container .password .pass .see{
+    border: 0;
+    border-radius: 10px;
+    padding: 0;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    height:32px;
+    width: 29px;
+    color: rgb(77, 77, 187);
+    background-color: inherit;
+}
+.container .password .pass .see i{
+cursor: pointer;
+
+}
+
+#icon {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    color: transparent;
+}
+.email #icon{
+    top:30px
+}
+
+.container .checkbox , .container .log{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .checkbox{
+    margin-right: 20px;
+}
+.container .checkbox input{
+    transform: scale(1.5);
+    border-radius: 5px;
+}
+
+.container input[type="submit"],.container button:not(.see) ,.log_in #switch{
+    color: white;
+    padding: 10px 10px;
+    border-radius:5px ;
+    border: 0;
+    cursor: pointer;
+}
+.login_bt{
+    background-color:hsl(207, 68%, 41%) ;
+}
+.login_bt:hover{
+    background-color:hsl(207, 68%, 51%) ;
+}
+.new_account, .signin_bt{
+    margin: 0;
+    background-color: rgb(20, 163, 20);
+    text-align: center;
+}
+.new_account:hover,.signin_bt:hover{
+    background-color: hsl(120, 78%, 46%);
+}
+/* need a function for this */
+.container a {
+    display: block;
+    font-size: 13px;
+}
+
+.signin_bt{
+    width: 100%
+}
+.sign_in ,.lost_password{
+    display: none;
+}
+.sign_in #switch{
+color: blue;
+font-size: 15px;
+text-decoration: underline;
+}

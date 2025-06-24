@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/shared.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <script src="/js/modules/declare.js" defer></script>
+    <script src="/js/modules/account_setting_functions.js" defer></script>
+    <script src="/js/modules/needed_functions.js" defer></script>
+    <script src="/js/modules/cart/add_to_cart.js" defer></script>
+    <script src="/js/modules/cart/cart.js" defer></script>
+    <script src="/js/modules/events_function_excution.js" defer></script>
+    <script src="/js/pages/home.js" defer></script>
+    <script src="/js/modules/nav.js" defer></script>
+    <title>Mystore</title>
+</head>
+<body>
+
+    <header>
+    <%- include('fragments/header') %>
+    </header> 
+    <main>
+        <section class="home">
+            <div class="container">
+                <div class="logo"><img src="img/home-logo.png" alt=""></div>
+                <h1>The best home
+                    entertainment system is 
+                    here</h1>
+                <p>Sit diam odio eget rhoncus volutpat est nibh velit posuere egestas.</p>
+                <a href="">Shop now</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div>
+                    <div class="logo"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Free shipping</h3>
+                    <p>When you spend $80 or more</p>
+                </div>
+                <div>
+                    <div class="logo"><i class="fa-solid fa-comment-dots"></i></div>
+                    <h3>We are available 24/7</h3>
+                    <p>Need help? contact us anytime</p>
+                </div>
+                <div>
+                    <div class="logo"><i class="fa-solid fa-rotate-left"></i></div>
+                    <h3>Satisfied or return</h3>
+                    <p>Easy 30-day return policy</p>
+                </div>
+                <div>
+                    <div class="logo"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>100% secure payments</h3>
+                    <p>Visa, Mastercard, Stripe, PayPal</p>
+                </div>
+            </div>
+        </section>
+        <section class="Products-summary" >
+            <div class="container">
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-06.jpg" alt="">
+                        <h3>Air conditioner<p>products</p></h3></div>
+                </div>
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-08.jpg" alt="">
+                        <h3>Audio video<p>products</p></h3>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-07.jpg" alt="">
+                        <h3>home appliances<p>products</p></h3></div>
+                </div>
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-05.jpg" alt="">
+                        <h3>kitchen appaliances<p>products</p></h3></div>
+                </div>
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-03.jpg" alt="">
+                        <h3>pc laptops <p>products</p></h3></div>
+                </div>
+                <div class="product">
+                    <div class="img-c"><img src="img/about/electronic-store-category-image-01.jpg" alt="">
+                        <h3 >smart home<p>5 products</p></h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ads-banner">
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="today-deal">
+            <div class="headers">
+                <h1>Today's best deal</h1>
+                <a>See more</a>
+            </div>
+            <div class="container_p">
+                <div class="product"  data-id="today-deal-product-100">
+                    <div class="img-c">
+                        <div class="pin">
+                        <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                       
+                            </div>
+                        <div class="note"> <p>add to cart</p></div>
+                        
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img src="/img/today-deal/electronic-store-product-image-27.jpg" alt="">
+                    </div>
+                    <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Multigroomer All-in-One Trimmer Series 5000,
+                         23 Piece Mens Grooming Kit</h3>
+                    <p> <del>$49.00</del>$44.00</p>
+                </div>
+                <div class="product"  data-id="today-deal-product-101">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+
+                            </div>                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-6-600x600.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-28.jpg" alt=""></div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Smart Speaker with Alexa Voice Control Built_in 
+                        Compact Size with Incredible Sound for Any Room</h3>
+                    <p><del>$249.00.</del>$219.00</p>
+                </div>
+                <div class="product" data-id="today-deal-product-102">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+
+                        </div>  
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-6-600x600.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-2.jpg" alt=""></div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Home Speaker 500: Smart Bluetooth Speaker with Alexa Voice Control Built_In, White</h3>
+                    <p> <del>$229.00.</del>$209.00</p>
+                </div>
+                <div class="product" data-id="today-deal-product-103">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-19.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-21.jpg" alt=""></div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Note 10 Pro 128GB 6GB RAM Factory Unlocked (GSM ONLY) International Model</h3>
+                    <p> <del>$699.00.</del>$659.00</p>
+                </div>
+                <div class="product" data-id="today-deal-product-104">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-19.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-36.jpg" alt=""></div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>5G Unlocked Smartphone,12GB RAM+256GB Storage120Hz
+                         Fluid Display Hasselblad Quad Camera 65W Ultra 
+                         Fast Charge 50W Wireless Charge</h3>
+                    <p><del>$1,099.00.</del>$999.00</p>
+                </div>
+                <div class="product" data-id="today-deal-product-105">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-19.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-22.jpg" alt="">
+                    </div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>5G Factory Unlocked Android Cell Phone 128GB Pro-Grade Camera 30X Space Zoom Night Mode,
+                        Space Grey</h3>
+                   <p><del>1,099.00.</del>$999.00</p>
+                </div>
+                <div class="product" data-id="today-deal-product-106">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-gallery-image-18.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-19.jpg" alt=""></div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>13 Ultrabook Gaming Laptop: Intel Core i7-1165G7 4 Core, NVIDIA GeForce GTX 1650 Ti Max-Q, 13.3″ 1080p 120Hz, 16GB RAM, 512GB SSD, CNC Aluminum, Chroma RGB, Thunderbolt 4
+                    </h3>
+                    <p><del>$1,499.00.</del>$1,399.00</p>
+        
+                </div>
+                <div class="product" data-id="today-deal-product-107">
+                    <div class="img-c">
+                        <div class="pin">
+                            <div class="cart-c">
+                                <i class="fa-solid fa-cart-shopping"></i>                         
+                            </div>
+                            <div class="note"> <p>add to cart</p></div>
+                        </div>
+                        <div class="sale">Sale!</div>
+                        <img class="hover-img" src="/img/today-deal/electronic-store-product-image-18.jpg" alt="">
+                        <img src="/img/today-deal/electronic-store-product-image-18.jpg" alt="">
+                    </div>
+                    <div class="stars"><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>15.6″ FHD Display Laptop - Intel i7 - 
+                        Intel HD Graphics 6000 , Webcam, WiFi,
+                         Bluetooth, HDMI, Windows 11,Grey</h3>
+                    <p><del>$1,029.00 </del>$999.50</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="other-products">
+            
+            <div class="first">
+                <div class="details">
+                <h1>Wireless headphone</h1>
+                <p>Starting at $49</p>
+                <a href="">Shop now</a></div>
+                <div class="img-c"><img src="img/others_p/electronic-store-wireless-headphone.png" alt=""></div>
+            </div>
+            <div class="second">
+                <div class="details">
+                <h1>Grooming</h1>
+                <p>Starting at $49</p>
+                <a href="">Shop now</a></div>
+                <div class="img-c"><img src="img/others_p/electronic-store-grooming.png" alt=""></div>
+            </div>
+            <div class="third">
+                <div class="details">
+                <h1>Video Games</h1>
+                <p>Starting at $49</p>
+                <a href="">Shop now</a></div>
+                <div class="img-c"><img src="img/others_p/electronic-store-video-games.png" alt=""></div>
+            </div>
+        </section>
+
+        
+        <section class="brand-deal">
+          <div class="container">
+            <div class="content headers ">
+
+                <h4>Brand's deal</h4>
+                <h1>Save up to 
+                    $200 on select Samsung washing machine</h1>
+                <p>Tortor purus et quis aenean tempus tellus fames.</p>
+                <a href="">Shop now</a>
+            </div>
+            <div class="img-c">
+                <img src="img/electronic-store-promotional-banner-hwidth-1.jpg" alt="">
+            </div>
+        </div>
+        </section>
+        <section class="top-brand">
+            <h1>Top brands</h1>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/brands/electronic-store-top-brand-logo-5.svg" alt="">
+                </div>
+                <div class="logo">
+                    <img src="img/brands/electronic-store-top-brand-logo-6.svg" alt="">
+                </div>
+                <div class="logo">
+                    <img src="img/brands/electronic-store-top-brand-logo-3.svg" alt="">
+                </div>
+                <div class="logo">
+                    <img src="img/brands/electronic-store-top-brand-logo-1.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <h2>What is everyone saying?</h2>
+            <div class="container">
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Dolores porro laboriosam molestias est quo. 
+                        Et et eos. Ab error modi labore sed eaque est.
+                         Quaerat aut est fugiat.</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-3.jpg" alt="">
+                        </div>
+                        <h4>Rafael Stokes</h4>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Dolorem et cumque consequuntur 
+                        consequuntur cumque eligendi voluptate.
+                         Tempore accusamus tempore consectetur dolor aliquid.</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-1.jpg" alt="">
+                        </div>
+                        <h4>Chelsea Turner</h4>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Dolores porro laboriosam molestias est quo. 
+                        Et et eos. Ab error modi labore sed eaque est.
+                         Quaerat aut est fugiat.</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-6.jpg" alt="">
+                        </div>
+                        <h4>Jacqueline Mueller</h4>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Dolores porro laboriosam molestias est quo. 
+                        Et et eos. Ab error modi labore sed eaque est.
+                         Quaerat aut est fugiat.</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-2.jpg" alt="">
+                        </div>
+                        <h4>Olive Borer</h4>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Saepe doloribus deserunt in. 
+                        At beatae neque pariatur harum vel..</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-5.jpg" alt="">
+                        </div>
+                        <h4>Priscilla Jacobson</h4>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="f_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Dolores porro laboriosam molestias est quo. 
+                        Et et eos. Ab error modi labore sed eaque est.
+                         Quaerat aut est fugiat.</p>
+                    <div class="client"> 
+                        <div class="img-c">
+                            <img src="img/clients/electronic-store-reviewer-avatar-image-4.jpg" alt="">
+                        </div>
+                        <h4>	
+                            Joseph Reinger</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cantact">
+            <div class="container">
+                <div class="img-c">
+                    <img src="img/electronic-store-support-team.png" alt="">
+                </div>
+                <div class="first">
+                    <a href=""> Have any questions?</a>
+                    <h2>Contact us</h2>
+                </div>
+                <div>
+                    <a href="">Customer service</a>
+                    <h2>1-222-345-6789</h2>
+                </div>
+                <div>
+                    <a href="">Expert advice</a>
+                    <h2>123-456-7890</h2>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe" >
+            <div class="container">
+                <div class="img-c">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <h3>Subscribe to our newsletter</h3>
+
+                </div>
+                <p>Sign up for all the latest news and special offers</p>
+                </div>
+                <div class="input">
+                    <input class="email" type="email" placeholder="email">
+                    <input class="bt" type="submit" value="subscribe">
+                </div>
+        </section>
+    </main>
+   
+    <footer>
+        <section class="main">
+            <div class="img-c">
+                <img src="/img/shop-logo.png" alt="">
+            </div>
+            <div class="links">
+                <h2>Shop</h2>
+                <a href=""> Hot deals</a>
+                <a href="">Categories</a>
+                <a href="">Brands</a>
+                <a href="">Rebates</a>
+                <a href="">Weekly deals</a>
+            </div>
+            <div class="links">
+                <h2>Need help ?</h2>
+                <a href="">Contact</a>
+                <a href="">Order tracking</a>
+                <a href="">FAQs</a>
+                <a href="">Return policy</a>
+                <a href="">Privacy policy</a>
+            </div>
+            <div class="links">
+                <h2>Cantact</h2>
+                <a href="">123 Fifth Avenue, New York, NY 10160</a>
+                <a href="">contact@info.com</a>
+                <a href="">929-242-6868</a>
+                
+            </div>
+            
+        </section>
+    <section class="disclaimer">
+        <p>
+            © 2024 Electronic Store. Powered by Electronic Store
+        </p>
+        <div class="try"></div>
+    </section>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<section class="update">
+    <i id="hide" class="fa-solid fa-times"></i>
+    <form action="">
+    <div class="email">
+        <label for="e1">Change Email</label>
+        <input id="e1" name="email"  type="email" required>
+        <i id="icon" class="fa-sharp fa-solid fa-circle-exclamation"></i>
+    </div>
+    <div class="password">
+        <label for="p1">Change Password</label>
+        <div class="pass">
+            <input id="p1" required name="password" type="password">
+            <button type="button" class="see"> <i class="fa-solid fa-eye"></i></button>
+            <i id="icon" class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="submit">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+</section>
+<section class="confirme_delete">
+    <h3>Delete confirmation</h3>
+    <p>Are you sure to delete the account ?</p>
+    <div class="buttons">
+    <button  class="cancel">Cancel </button>
+    <button class="delete_bt">Delete</button>
+</div>
+</section>
+
+<div class="back_cover"></div>
+<aside class="cart-items" > 
+    <div class="header"> 
+    <h3>Shopping Cart</h3>
+    <i class="fa-solid fa-times"></i>
+    </div>
+    <div class="container">
+        <p>no products in the cart</p>
+        <ul class="items_list">
+            <li class="model">
+                <button data-action="remove_product" class="remove_bt"> 
+                    <i class="fa-solid fa-times" data-action="remove_product"></i>
+                </button>
+                <p class="price"><del></del></p>
+                <div class="img-c">
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <p></p>
+                    <div class="pro_n">
+                        <button class="increase" data-action="increase_number">+</button>
+                        <input data-old_value="1" data-action="product_number_input" type="text" value="1">
+                        <button class="decrease" data-action="decrease_number">-</button>
+                    </div>
+                </div>
+                
+        </li>
+
+        </ul>
+    </div>
+    <div class="total_price">
+        <h3>Subtotal:</h3>
+        <p>0.00$</p>
+    </div>
+    <div class="buttons">
+    <button id="b" class="viewcart">View Cart</button>
+    <button id="b" class="continue_checkout">continue your shopping</button>
+    </div>
+</aside>
+<div class="cover"></div>
+<section class="nav" >
+    <div class="first-header">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="text" type="text" placeholder="Search ...">
+        </div>
+        <div class="log">
+            <a class="login"  href="/auth.html">Log in</a>
+            <a class="sign_in" href="/auth.html">Sign in</a>
+        </div>
+        <div class="user_related">
+            <button class="notifications">
+                <div class="notif_icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="notification_number"> <p>0</p> </div>
+                <ul  tabindex="0" class="notification_list" >
+                    <li>
+                        <p>default notification</p>
+                    </li>
+            </ul>
+            </button>
+            <button class="account"><i class="fa-solid fa-user"></i>
+                <ul  tabindex="0" class="setting">
+                    <li><a class="up_date" href=""><i class="fa-solid fa-pen-to-square"></i> Update data</a></li>
+                    <li><a class="logout" href=""><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Deconnect</a></li>
+                    <li><a class="delete" href=""><i class="fa-solid fa-trash"></i> Delete account</a></li>
+                    <li class="see_all"><a  href=""><i class="fas fa-bars"></i>Users_list</a></li>
+                </ul>
+            </button>
+           
+
+        </div>
+        
+    </div>
+    <div class="second-header" >
+        <button  class="menu-button"><i class="fas fa-bars"></i></button>
+
+        <div class="logo"><a href="/"><img src="/img/shop-logo.png" alt=""></a></div>
+
+        <ul class="links">
+            <li class="link_menu"><a href="/shop">All products </a> 
+                <div  class="arrow_icon"><i class="fa-solid fa-angle-down"></i></div> 
+            </li>
+            <ul class="sub-menu">
+                <li><i class="fa-solid fa-angle-right"></i><a href="">Kitchen appliances</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="">PCs & laptop</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="">Smart home</a></li>
+            </ul>
+            <li class="sss"><a href="">Home appliances </a></li>
+            <li><a href="">Audio & video </a></li>
+            <li><a href="">New arrivals </a></li>
+            <li><a href="">Today's deal </a></li>
+
+        </ul>
+        <div class="side">
+        <button class="cart"><i class="fa-solid fa-cart-shopping"></i>
+            <div class="p-nb"><p>0</p></div>
+        </button>
+        </div>
+        
+    </div>
+</section>
