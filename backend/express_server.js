@@ -9,7 +9,7 @@ setupWebSocket(server);
 
 
 
-const port=process.env.PORT
+const port=process.env.PORT || 3000
 
 server.listen(port,"0.0.0.0",async ()=>{
     console.log(`Server is running on http://127.0.0.1:${port}`);

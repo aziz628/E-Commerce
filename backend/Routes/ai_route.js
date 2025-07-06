@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const aiController = require('../controlers/ai_controller');
-const { admin_middleware } = require('../middlewares/middlewares');
+const { isAdmin } = require('../middlewares/middlewares');
 
 // Apply admin middleware to all AI routes
-router.use(admin_middleware);
+router.use(isAdmin);
 
 // AI Service Management
 router.post('/start', aiController.startAI);
