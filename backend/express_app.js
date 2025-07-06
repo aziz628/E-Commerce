@@ -5,6 +5,7 @@ const fs=require("fs")
 const users_router= require('./Routes/users_route')
 const product_router=require('./Routes/product_route');
 const admin_route=require('./Routes/admin_route');
+const ai_route=require('./Routes/ai_route');
 const send_template=require('./utils/send_template')
 const helmet=require("helmet")
 const morgan=require("morgan");
@@ -28,6 +29,8 @@ app.use('/products',product_router)
 app.use("/users",users_router)  
 
 app.use("/admin",admin_route);
+
+app.use("/ai",ai_route);
 
 
 app.use('/css',express.static(path.join(__dirname,"../frontend/assets")))

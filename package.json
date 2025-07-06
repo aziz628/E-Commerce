@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node backend/express_server.js",
     "dev": "nodemon backend/express_server.js",
-    "init-db": "node backend/DB/init_db_mysql.js"
+    "init-db": "node backend/DB/init_db_mysql.js",
+    "test-ai": "node backend/test-ai.js"
   },
   "keywords": [
     "e-commerce",
